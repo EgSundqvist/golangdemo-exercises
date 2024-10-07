@@ -1,4 +1,4 @@
-package main
+package exercises
 
 import (
 	"fmt"
@@ -6,11 +6,11 @@ import (
 	"strings"
 )
 
-func Exercise1() {
+func Variables1() {
 	fmt.Printf("Hello, World!")
 }
 
-func Exercise2() {
+func Variables2() {
 	print("2021")
 	print("\n")
 	print(2021)
@@ -21,7 +21,7 @@ func Exercise2() {
 	print("\n")
 }
 
-func Exercise3() {
+func Variables3() {
 
 	var age int = 39
 	var name string = "Erik Sundqvist"
@@ -32,7 +32,7 @@ func Exercise3() {
 
 }
 
-func Exercise4() {
+func Variables4() {
 	var firstName string
 	var lastName string
 	fmt.Printf("Skriv in ditt förnamn:")
@@ -42,7 +42,7 @@ func Exercise4() {
 	fmt.Printf("Du heter %s %s", lastName, firstName)
 }
 
-func Exercise5() {
+func Variables5() {
 	var num1 int
 	var num2 int
 	var sum int
@@ -68,7 +68,7 @@ func Exercise5() {
 
 }
 
-func Exercise6() {
+func Variables6() {
 	var num1 float64
 	var num2 float64
 	var sum float64
@@ -95,7 +95,7 @@ func Exercise6() {
 
 }
 
-func Exercise7() {
+func Variables7() {
 	var firstName string
 	var firstNameRepeat string
 	fmt.Printf("Skriv in ditt förnamn: ")
@@ -106,7 +106,7 @@ func Exercise7() {
 
 }
 
-func Exercise8() {
+func Variables8() {
 	var num int
 	fmt.Printf("Mata in ett heltal: ")
 	fmt.Scanln(&num)

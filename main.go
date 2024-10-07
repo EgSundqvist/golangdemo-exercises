@@ -1,12 +1,20 @@
 package main
 
+import "github.com/EgSundqvist/golangdemo0930/exercises"
+
 func main() {
-	//Exercise1()
-	//Exercise2()
-	//Exercise3()
-	//Exercise4()
-	//Exercise5()
-	//Exercise6()
-	//Exercise7()
-	Exercise8()
+	//exercises.Exercise1()
+	//exercises.Exercise2()
+	//exercises.Exercise3()
+	//exercises.Exercise4()
+	//exercises.Exercise5()
+	//exercises.Exercise6()
+	//exercises.Exercise7()
+	// exercises.Variables8()
+	// exercises.Ifs1()
+	// exercises.Ifs2()
+	// exercises.Ifs3()
+	//exercises.Ifs4()
+	//exercises.Ifs5()
+	exercises.Ifs6()
 }
