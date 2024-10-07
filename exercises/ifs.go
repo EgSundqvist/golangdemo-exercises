@@ -1,6 +1,9 @@
 package exercises
 
-import "fmt"
+import (
+	"fmt"
+	"strings"
+)
 
 func Ifs1() {
 	var num int
@@ -97,5 +100,63 @@ func Ifs6() {
 	} else {
 		fmt.Println("You are neither a 80's or 90's child")
 
+	}
+}
+
+func Ifs7() {
+	var countryResidence string
+	fmt.Print("Enter your country of residence: ")
+	fmt.Scanln(&countryResidence)
+
+	countryResidence = strings.ToLower(countryResidence)
+
+	if countryResidence == "sweden" || countryResidence == "denmark" || countryResidence == "norway" {
+		fmt.Println("You are from Scandinavia")
+	} else {
+		fmt.Println("You are not from Scandinavia")
+	}
+}
+
+func Ifs8() {
+	var amount float64
+	var hasDiscount string
+
+	fmt.Print("Enter the amount of money you have: ")
+	fmt.Scanln(&amount)
+
+	for {
+		fmt.Print("Do you have a discount? (yes/no): ")
+		fmt.Scanln(&hasDiscount)
+		hasDiscount = strings.ToLower(hasDiscount)
+
+		if hasDiscount == "yes" || hasDiscount == "no" {
+			break
+		} else {
+			fmt.Println("Invalid input")
+		}
+	}
+
+	if amount >= 15 && amount <= 25 {
+		if hasDiscount == "yes" {
+			fmt.Println("You can buya small burger with fries")
+		} else {
+			fmt.Println("You can buy a small burger")
+		}
+	} else if amount > 25 && amount <= 50 {
+		if hasDiscount == "yes" {
+			fmt.Println("You can buy a big burger with fries")
+		} else {
+			fmt.Println("You can buy a big burger")
+		}
+	} else if amount > 60 {
+		fmt.Println("You can buy a big burger with fries and a drink")
+	} else if amount >= 50 && amount <= 60 {
+		if hasDiscount == "yes" {
+			fmt.Println("You can buy a big burger with fries and a drink")
+		} else {
+			fmt.Println("You can buy a big burger with fries")
+		}
+	} else {
+		fmt.Println("You can't buy anything")
 	}
 }

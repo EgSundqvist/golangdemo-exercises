@@ -16,5 +16,10 @@ func main() {
 	// exercises.Ifs3()
 	//exercises.Ifs4()
 	//exercises.Ifs5()
-	exercises.Ifs6()
+	// exercises.Ifs6()
+	// exercises.Ifs7()
+	// exercises.Ifs8()
+	// exercises.Loops1()
+	// exercises.Loops2()
+	exercises.Loops3()
 }
