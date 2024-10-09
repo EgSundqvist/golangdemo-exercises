@@ -21,5 +21,9 @@ func main() {
 	// exercises.Ifs8()
 	// exercises.Loops1()
 	// exercises.Loops2()
-	exercises.Loops3()
+	// exercises.Loops3()
+	// exercises.Loops4()
+	// exercises.Loops5()
+	// exercises.Structures1()
+	exercises.Structures2()
 }

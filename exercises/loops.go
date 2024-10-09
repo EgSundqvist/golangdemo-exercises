@@ -55,3 +55,35 @@ func Loops3() {
 
 	}
 }
+
+func Loops4() {
+	var num int
+	var sum int
+
+	for i := 0; i < 10; i++ {
+		fmt.Print("Enter a number: ")
+		fmt.Scanln(&num)
+		sum += num
+	}
+
+	fmt.Printf("The sum of the numbers is %d\n", sum)
+}
+
+func Loops5() {
+	var num int
+
+	for {
+		fmt.Print("Enter a number: ")
+		fmt.Scanln(&num)
+
+		if num > 0 {
+			break
+		}
+		fmt.Println("Please enter a positive number")
+	}
+
+	fmt.Println("Numbers from 1 to the entered number")
+	for i := 1; i <= num; i++ {
+		fmt.Println(i)
+	}
+}
