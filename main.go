@@ -25,5 +25,6 @@ func main() {
 	// exercises.Loops4()
 	// exercises.Loops5()
 	// exercises.Structures1()
-	exercises.Structures2()
+	// exercises.Structures2()
+	exercises.Structures3()
 }

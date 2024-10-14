@@ -52,3 +52,37 @@ func Structures2() {
 
 	fmt.Printf("The longest name is %s\n", longestName)
 }
+
+func Structures3() {
+	fmt.Println("1. Create account")
+	fmt.Println("2. Delete account")
+	fmt.Println("3. List all account numbers")
+	fmt.Println("4. List total balance")
+	fmt.Println("5. List all account numbers and balances")
+	fmt.Println("6. Exit")
+	fmt.Print("Choose an option: ")
+
+	for {
+		var choice int
+		fmt.Scanln(&choice)
+
+		switch choice {
+		case 1:
+			fmt.Println("Create account - Functionality not implemented yet.")
+		case 2:
+			fmt.Println("Delete account - Functionality not implemented yet.")
+		case 3:
+			fmt.Println("List all account numbers - Functionality not implemented yet.")
+		case 4:
+			fmt.Println("List total balance - Functionality not implemented yet.")
+		case 5:
+			fmt.Println("List all account numbers and balances - Functionality not implemented yet.")
+		case 6:
+			fmt.Println("Exiting...")
+			return
+		default:
+			fmt.Println("Invalid choice. Please try again.")
+		}
+	}
+
+}
