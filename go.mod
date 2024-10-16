@@ -1,3 +1,3 @@
-module github.com/EgSundqvist/golangdemo0930
+module github.com/EgSundqvist/golangdemo-exercises
 
 go 1.23.1
