@@ -9,11 +9,13 @@ import (
 
 func showStructsMenu() {
 	for {
+		utils.PrintDecorativeLine()
 		fmt.Println("Choose a Structs exercise:")
 		fmt.Println("1. Structs1")
 		fmt.Println("2. Structs2")
 		fmt.Println("3. Structs3")
 		fmt.Println("0. Back to main menu")
+		utils.PrintDecorativeLine()
 
 		var choice int
 		fmt.Scanln(&choice)

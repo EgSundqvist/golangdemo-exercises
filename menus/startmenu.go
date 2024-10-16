@@ -8,6 +8,8 @@ import (
 
 func ShowMenu() {
 	for {
+		utils.ClearTerminal()
+		utils.PrintDecorativeLine()
 		fmt.Println("Choose exercise type:")
 		fmt.Println("1. Variables")
 		fmt.Println("2. Ifs")
@@ -17,6 +19,7 @@ func ShowMenu() {
 		fmt.Println("6. Functions")
 		fmt.Println("7. Structs")
 		fmt.Println("0. Exit")
+		utils.PrintDecorativeLine()
 
 		var choice int
 		fmt.Scanln(&choice)

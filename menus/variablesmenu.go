@@ -9,6 +9,7 @@ import (
 
 func showVariablesMenu() {
 	for {
+		utils.PrintDecorativeLine()
 		fmt.Println("Choose a Variables exercise:")
 		fmt.Println("1. Variables1")
 		fmt.Println("2. Variables2")
@@ -19,6 +20,7 @@ func showVariablesMenu() {
 		fmt.Println("7. Variables7")
 		fmt.Println("8. Variables8")
 		fmt.Println("0. Back to main menu")
+		utils.PrintDecorativeLine()
 
 		var choice int
 		fmt.Scanln(&choice)

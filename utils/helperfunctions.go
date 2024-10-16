@@ -16,3 +16,7 @@ func ClearTerminal() {
 	cmd.Stdout = os.Stdout
 	cmd.Run()
 }
+
+func PrintDecorativeLine() {
+	fmt.Println("****************************************")
+}

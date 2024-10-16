@@ -9,6 +9,7 @@ import (
 
 func showLoopsMenu() {
 	for {
+		utils.PrintDecorativeLine()
 		fmt.Println("Choose a Loops exercise:")
 		fmt.Println("1. Loops1")
 		fmt.Println("2. Loops2")
@@ -16,6 +17,7 @@ func showLoopsMenu() {
 		fmt.Println("4. Loops4")
 		fmt.Println("5. Loops5")
 		fmt.Println("0. Back to main menu")
+		utils.PrintDecorativeLine()
 
 		var choice int
 		fmt.Scanln(&choice)

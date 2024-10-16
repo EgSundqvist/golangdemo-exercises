@@ -9,6 +9,7 @@ import (
 
 func showIfsMenu() {
 	for {
+		utils.PrintDecorativeLine()
 		fmt.Println("Choose an Ifs exercise:")
 		fmt.Println("1. Ifs1")
 		fmt.Println("2. Ifs2")
@@ -19,6 +20,7 @@ func showIfsMenu() {
 		fmt.Println("7. Ifs7")
 		fmt.Println("8. Ifs8")
 		fmt.Println("0. Back to main menu")
+		utils.PrintDecorativeLine()
 
 		var choice int
 		fmt.Scanln(&choice)

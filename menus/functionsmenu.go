@@ -9,12 +9,14 @@ import (
 
 func showFunctionsMenu() {
 	for {
+		utils.PrintDecorativeLine()
 		fmt.Println("Choose a Functions exercise:")
 		fmt.Println("1. Functions1")
 		fmt.Println("2. Functions2")
 		fmt.Println("3. Functions3")
 		fmt.Println("4. Functions4")
 		fmt.Println("0. Back to main menu")
+		utils.PrintDecorativeLine()
 
 		var choice int
 		fmt.Scanln(&choice)

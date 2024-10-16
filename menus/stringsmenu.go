@@ -9,6 +9,7 @@ import (
 
 func showStringsMenu() {
 	for {
+		utils.PrintDecorativeLine()
 		fmt.Println("Choose a Strings exercise:")
 		fmt.Println("1. Strings1")
 		fmt.Println("2. Strings2")
@@ -17,6 +18,7 @@ func showStringsMenu() {
 		fmt.Println("5. Strings5")
 		fmt.Println("6. Strings6")
 		fmt.Println("0. Back to main menu")
+		utils.PrintDecorativeLine()
 
 		var choice int
 		fmt.Scanln(&choice)

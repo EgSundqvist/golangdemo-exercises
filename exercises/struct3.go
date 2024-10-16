@@ -37,11 +37,12 @@ func registerDog() {
 	}
 
 	kennel = append(kennel, dog)
+	utils.ClearTerminal()
 	fmt.Println("Dog has been registred.")
 }
 
 func calculateTailLength(dog Dog) float64 {
-	if dog.Breed == "Tax" {
+	if dog.Breed == "Tax" || dog.Breed == "tax" {
 		return 3.7
 	}
 	return float64(dog.Age) * dog.Weight / 10
@@ -55,7 +56,7 @@ func listDogs() {
 	for _, dog := range kennel {
 		tailLength := calculateTailLength(dog)
 		if tailLength >= minTailLength {
-			fmt.Printf("%s %s %d age %g kg tale=%g\n", dog.Name, dog.Breed, dog.Age, dog.Weight, tailLength)
+			fmt.Printf("%s, %s, %d years, %g kg, tale=%g\n", dog.Name, dog.Breed, dog.Age, dog.Weight, tailLength)
 		}
 	}
 }
@@ -101,9 +102,9 @@ func Structs3() {
 		case 4:
 			utils.ClearTerminal()
 			fmt.Println("Exiting Program.")
-			utils.Pause()
 			return
 		default:
+			utils.ClearTerminal()
 			fmt.Println("Invalid command.")
 		}
 	}
